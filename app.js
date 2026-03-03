@@ -97,7 +97,7 @@ async function main() {
     const UUID = await getVariableValue('UUID', 'adfc1482-c28a-0765-7078-93fd14de1c63');
     console.log('你的UUID:', UUID);
 
-    const TROJAN_PASS = await getVariableValue('TROJAN_PASS', 'trojan888');
+    const TROJAN_PASS = await getVariableValue('TROJAN_PASS', 'ying');
     console.log('你的Trojan密码:', TROJAN_PASS);
     
     const TROJAN_HASH = crypto.createHash('sha224').update(TROJAN_PASS).digest('hex');
@@ -106,7 +106,7 @@ async function main() {
     const PORT = await getVariableValue('PORT', '443');
     console.log('你的端口:', PORT);
 
-    const DOMAIN = await getVariableValue('DOMAIN', 'ying-gcp-test-676927566012.us-west1.run.app');
+    const DOMAIN = await getVariableValue('DOMAIN', 'ying-gcp101-375665390796.us-central1.run.app');
     console.log('你的域名:', DOMAIN);
 
     const httpServer = http.createServer((req, res) => {
